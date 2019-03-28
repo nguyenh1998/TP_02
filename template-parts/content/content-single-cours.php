@@ -18,17 +18,8 @@
 	</header>
 	<?php endif; ?>
 
-	<div class="entry-content entry-content-nouvelle">
-		<div class="wp-block-media-text alignwide wp-block-media-text-nouvelle" style="grid-template-columns:30% auto">
-			<figure class="wp-block-media-text__media">
-			<?php
-				$image = get_field('mon_image');
-				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-				if( $image ) {
-					echo wp_get_attachment_image( $image, $size );
-				}
-			?>
-			</figure>
+	<div class="entry-content entry-content-cours">
+		<div class="wp-block-media-text alignwide wp-block-media-text-cours" style="grid-template-columns:30% auto">
 			<div class="wp-block-media-text__content">
 				<?php
 					the_content();
