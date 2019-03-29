@@ -1,4 +1,10 @@
 // Featured image styles
+.site-header {
+    height: 90vh;
+    background-image: url("img/header-image.png");
+    background-size: cover;
+    color: white;
+}
 
 .site-header.featured-image {
 
@@ -45,8 +51,6 @@
         justify-content: center;
     }
 
-
-
     @include media(tablet)
     {
         .site-branding{
@@ -68,13 +72,13 @@
    @include media(desktop) {
 
             .site-branding {
-                min-width: 78vw;
-                min-height: 35vh;
+                min-width: 100vw;
+                min-height: 50vh;
             }
 
 
            .site-branding .site-title {
-               font-size: 5vw;
+               font-size: 50vw;
            }
 
            .site-branding .site-description {
@@ -83,4 +87,34 @@
 
    }
 
+}
+
+.site-branding {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title {
+    font-size: 10vw;
+}
+
+.site-description {
+    font-size: 4vw;
+    color : #FCFCFC;
+}
+
+
+
+#masthead {
+    @include media(desktop) {
+        padding-top: 20%;
+
+        a {
+            color: #FCFCFC;
+        }
+
+        a:hover {
+            color : #44CFCB
+        }
+    }
 }

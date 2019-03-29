@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- Theme Name:   Twenty nineteen Enfant
+ Theme Name:   Twenty nineteen votreprenom
  Theme URI:    http://referenced.ca
  Description:  Twenty nineteen enfant Theme
  Author:       Eddy Martin
@@ -10,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-nineteen-enfant
+ Text Domain:  twenty-nineteen-votreprenom
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -599,6 +599,13 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+.site-header {
+  height: 90vh;
+  background-image: url("img/header-image.png");
+  background-size: cover;
+  color: white;
+}
+
 .site-header.featured-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,14 +682,45 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   .site-header.featured-image .site-branding {
-    min-width: 78vw;
-    min-height: 35vh;
+    min-width: 100vw;
+    min-height: 50vh;
   }
   .site-header.featured-image .site-branding .site-title {
-    font-size: 5vw;
+    font-size: 50vw;
   }
   .site-header.featured-image .site-branding .site-description {
     font-size: 4vw;
+  }
+}
+
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.site-title {
+  font-size: 10vw;
+}
+
+.site-description {
+  font-size: 4vw;
+  color: #FCFCFC;
+}
+
+@media only screen and (min-width: 1168px) {
+  #masthead {
+    padding-top: 20%;
+  }
+  #masthead a {
+    color: #FCFCFC;
+  }
+  #masthead a:hover {
+    color: #44CFCB;
   }
 }
 
