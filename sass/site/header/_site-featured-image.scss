@@ -11,8 +11,8 @@
    
     display : flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
 
 
 /* enfant */
@@ -73,7 +73,7 @@
 
             .site-branding {
                 min-width: 100vw;
-                min-height: 50vh;
+                min-height: 70vh;
             }
 
 
@@ -91,7 +91,9 @@
 
 .site-branding {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-title {
@@ -99,22 +101,25 @@
 }
 
 .site-description {
-    font-size: 4vw;
+    min-width: 70%;
+    font-size: 2.4vw;
     color : #FCFCFC;
+    padding-left: 10%;
+    padding-top: 1%;
 }
 
 
 
 #masthead {
     @include media(desktop) {
-        padding-top: 20%;
+        padding-top: 27%;
 
         a {
             color: #FCFCFC;
         }
 
         a:hover {
-            color : #44CFCB
+            color : #44CFCB;
         }
     }
 }

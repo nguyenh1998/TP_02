@@ -614,12 +614,6 @@ body.page .main-navigation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   /* enfant */
   /* enfant */
 }
@@ -683,7 +677,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .site-header.featured-image .site-branding {
     min-width: 100vw;
-    min-height: 50vh;
+    min-height: 70vh;
   }
   .site-header.featured-image .site-branding .site-title {
     font-size: 50vw;
@@ -697,10 +691,16 @@ body.page .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-title {
@@ -708,13 +708,16 @@ body.page .main-navigation {
 }
 
 .site-description {
-  font-size: 4vw;
+  min-width: 70%;
+  font-size: 2.4vw;
   color: #FCFCFC;
+  padding-left: 10%;
+  padding-top: 1%;
 }
 
 @media only screen and (min-width: 1168px) {
   #masthead {
-    padding-top: 20%;
+    padding-top: 27%;
   }
   #masthead a {
     color: #FCFCFC;
