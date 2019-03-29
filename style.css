@@ -834,6 +834,8 @@ body.page .main-navigation {
   100% {
     -webkit-transform: translateY(0) rotateX(0deg);
             transform: translateY(0) rotateX(0deg);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.17, 1, 0.31);
+            animation-timing-function: cubic-bezier(0.89, 0.17, 1, 0.31);
   }
 }
 
@@ -847,6 +849,8 @@ body.page .main-navigation {
   100% {
     -webkit-transform: translateY(0) rotateX(0deg);
             transform: translateY(0) rotateX(0deg);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.17, 1, 0.31);
+            animation-timing-function: cubic-bezier(0.89, 0.17, 1, 0.31);
   }
 }
 

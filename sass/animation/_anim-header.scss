@@ -9,7 +9,7 @@
  
     100% {
         transform: translateY(0) rotateX(0deg); 
-        // animation-timing-function: cubic-bezier(.89, .17, 1, .31);
+        animation-timing-function: cubic-bezier(.89, .17, 1, .31);
     }
 }
 
@@ -75,7 +75,6 @@
 }
 
 .anim3 {
-    // animation-fill-mode: forwards;
     transform-origin: top center;
     animation: anim3 1s forwards, anim2 1s 1s forwards;
     animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
