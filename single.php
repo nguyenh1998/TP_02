@@ -26,7 +26,7 @@ get_header();
 					get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 				}	
 
-				if(in_category(cours)) {
+				if(in_category('cours')) {
 					get_template_part( 'template-parts/content/content', 'single-cours' );
 				}
 
