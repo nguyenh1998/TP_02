@@ -41,7 +41,7 @@ get_header();
 	?>
 
 <article  class="page type-page status-publish has-post-thumbnail hentry entry">
-	<div class="entry-content">
+	<div class="entry-content accueil">
 
 		<div class="nouvelle-title"> <strong> Nouvelles </strong></div>
 		

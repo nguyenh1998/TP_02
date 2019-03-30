@@ -130,14 +130,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li {
-  color: #0073aa;
+  color: white;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: #0073aa;
+  color: white;
   margin-right: 0.5rem;
 }
 
@@ -912,7 +912,7 @@ body {
   color: black;
 }
 
-.entry-content {
+.accueil {
   opacity: 0;
 }
 

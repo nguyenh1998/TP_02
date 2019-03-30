@@ -55,14 +55,14 @@
 
 		> li {
 
-			color: $color__link;
+			color: white;
 			display: inline;
 			position: relative;
 
 			> a {
 
 				font-weight: 700;
-				color: $color__link;
+				color: white;
 				margin-right: #{0.5 * $size__spacing-unit};
 
 				+ svg {
