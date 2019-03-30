@@ -12,3 +12,17 @@
 ?>
 //////////////////  accueil-page.php //////////////
 
+<div class="menu">
+    <div data-active-trigger="menu" class="menu-opener">
+            <div class="burger">
+            <span></span>
+        </div>
+        <ul data-active-group="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+</div>
+
