@@ -4,20 +4,23 @@
       margin-bottom:0 ;
 }
 
+.cours-title {
+    border-bottom: 5px solid black;
+}
+
 .liste-cours {
     display : grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    margin: 2% 2% 0% 15%;
+    margin: 5% 5% 0% 5%;
     font-size : 1.5em;
   
-    .session-1 { background-color: #1c7742; color : #fff; }
-    .session-2 { background-color: #d3a145; color : #aaa;}
-    .session-3 { background-color: #2f2f97; color : #fff;}
-    .session-4 { background-color: #948b36; color : #fff;}
-    .session-5 { background-color: #97173d; color : #fff;}
-    .session-6 { background-color: #251b04; color : #fff;}
-    h3,h4 { padding:5px;}
+    .session-1 { background-color: #26547C; color : #fff; }
+    .session-2 { background-color: rgb(54, 82, 153); color : #aaa;}
+    .session-3 { background-color: #D36582; color : #fff;}
+    .session-4 { background-color: #FFEECF; color : #fff;}
+    .session-5 { background-color: #C9A690; color : #fff;}
+    h3,h4 { padding:10px;}
 
     @include media(mobile){
         grid-template-columns: repeat(2,1fr);
@@ -49,9 +52,13 @@
 
         h3{
             font-size: .5em;
+            color: black;
+            width: auto;
+            border-bottom: 2px solid black;
         }
         h4{
             font-size: .4em;
+            color: black;
         }
     }
 

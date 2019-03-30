@@ -18,7 +18,7 @@ get_header();
 
 	<?php // the_archive_title('<h1 class="page-title">', '</h1>'); ?>
 	<header id='liste-cours' class="page-header">
-		<h1>Liste des cours</h1>
+		<h1 class="cours-title">Liste des cours</h1>
 	</header><!-- .page-header -->
 
 	<div class="wp-block-columns">
@@ -42,6 +42,6 @@ get_header();
 	endif;
 	?>
 
-	</main>< !-- #main -->
-</section>< !-- #primary -->
+	</main>
+</section>
 <?php get_footer();
