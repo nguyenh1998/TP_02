@@ -38,3 +38,44 @@
     
 }
 
+.evenement-title {
+    padding-top: 12%;
+    font-size: 3em;
+    border-bottom: 5px solid black;
+}
+
+.evenement-content {
+    background-color: #44CFCB;
+    min-width: 72vw;
+    border-radius: 40px;
+    padding: 5%;
+
+
+    @include media(desktop) {
+        padding: 10% 8% 10% 8%;
+    }
+}
+
+.wp-block-media-text__media {
+    background-color: white;
+    border : 10px solid white;
+    
+    @include media(desktop) {
+        padding-left: 20px;
+    }
+
+    .evenement-link {
+        color: black;
+
+        @include media(desktop) {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.categorie-evenement {
+    background-color: white;
+    margin-bottom: 10%;
+    padding: 4%;
+    border-radius: 20px;
+}

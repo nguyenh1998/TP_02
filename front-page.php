@@ -42,40 +42,46 @@ get_header();
 
 <article  class="page type-page status-publish has-post-thumbnail hentry entry">
 	<div class="entry-content">
-	<div class="nouvelle-title"> <strong> Nouvelles </strong></div>
+
+		<div class="nouvelle-title"> <strong> Nouvelles </strong></div>
+		
 		<div class="wp-block-columns has-4-columns">
-		<?php while ( $query->have_posts()) {
-				$query->the_post();
-				$leTitre = 'Nouvelles';
-				include(locate_template( 'template-parts/content/frontpage-quatre-images.php' ));
-			}			 
-	 wp_reset_postdata();
-	}
-?>
+			<?php while ( $query->have_posts()) {
+					$query->the_post();
+					$leTitre = 'Nouvelles';
+					include(locate_template( 'template-parts/content/frontpage-quatre-images.php' ));
+				}			 
+				wp_reset_postdata();
+				}
+			?>
 		</div>	
 
 
 <!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->
 
-<?php
-		$args = array( 'post_type' => 'post',
-					   'category_name' => 'evenement',
-					   'posts_per_page' => 4
-					);
+		<div class="evenement-title"> <strong> Événement </strong></div>
+		
+		<div class="evenement-content">
+			<?php
+					$args = array( 'post_type' => 'post',
+								'category_name' => 'evenement',
+								'posts_per_page' => 4
+								);
 
-		$query = new WP_Query ( $args );
-	
-		if ($query->have_posts() ) {
-	?>
+					$query = new WP_Query ( $args );
+				
+					if ($query->have_posts() ) {
+				?>
 
-		<?php while ( $query->have_posts()) {
-				$query->the_post();
-				include(locate_template( 'template-parts/content/frontpage-une-image.php' ));
-			}			 
+					<?php while ( $query->have_posts()) {
+							$query->the_post();
+							include(locate_template( 'template-parts/content/frontpage-une-image.php' ));
+						}			 
 
-	 wp_reset_postdata();
-	}
-?>
+				wp_reset_postdata();
+				}
+			?>
+		</div>
 	</div>	
 </article>	
 <!--  ///////////////////////////////////////////////////////////////////////// -->

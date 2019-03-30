@@ -865,6 +865,53 @@ body.page .main-navigation {
   text-align: center;
 }
 
+.evenement-title {
+  padding-top: 12%;
+  font-size: 3em;
+  border-bottom: 5px solid black;
+}
+
+.evenement-content {
+  background-color: #44CFCB;
+  min-width: 72vw;
+  border-radius: 40px;
+  padding: 5%;
+}
+
+@media only screen and (min-width: 1168px) {
+  .evenement-content {
+    padding: 10% 8% 10% 8%;
+  }
+}
+
+.wp-block-media-text__media {
+  background-color: white;
+  border: 10px solid white;
+}
+
+@media only screen and (min-width: 1168px) {
+  .wp-block-media-text__media {
+    padding-left: 20px;
+  }
+}
+
+.wp-block-media-text__media .evenement-link {
+  color: black;
+}
+
+@media only screen and (min-width: 1168px) {
+  .wp-block-media-text__media .evenement-link {
+    font-size: 1.5em;
+  }
+}
+
+.categorie-evenement {
+  background-color: white;
+  margin-bottom: 10%;
+  padding: 4%;
+  border-radius: 20px;
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);
