@@ -101,10 +101,10 @@ body.page .main-navigation {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
-  transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  transition: background 250ms ease-in-out, transform 150ms ease, -webkit-transform 150ms ease;
+  -webkit-transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  transition: background 250ms ease-in-out, transform 150ms ease, -webkit-transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -594,95 +594,6 @@ body.page .main-navigation {
   to {
     opacity: 1;
   }
-}
-
-body {
-  font-family: Avenir Next, sans-serif;
-}
-
-.burger {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  height: 50px;
-  width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.burger:hover {
-  cursor: pointer;
-}
-
-.burger > span {
-  content: '';
-  width: 50px;
-  height: 6px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.burger > span:before,
-.burger > span:after {
-  content: '';
-  width: 50px;
-  height: 6px;
-  top: -12px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-}
-
-.burger > span:after {
-  top: 12px;
-}
-
-.burger_opened > span:before,
-.burger_opened > span:after {
-  content: '';
-  width: 50px;
-  height: 6px;
-  top: 0px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.burger_opened > span {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-[data-active-group] {
-  position: fixed;
-  font-size: 20px;
-  left: -100%;
-  top: 0;
-  padding: 10px;
-  color: white;
-  background-color: black;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-[data-active-group] > li {
-  margin: 10px;
-}
-
-.active {
-  top: 0;
-  left: 0;
 }
 
 /*--------------------------------------------------------------
