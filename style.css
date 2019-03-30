@@ -824,6 +824,47 @@ body.page .main-navigation {
   font-size: 1em;
 }
 
+.nouvelle-title {
+  font-size: 3em;
+  border-bottom: 5px solid black;
+}
+
+.has-4-columns {
+  min-width: 72vw;
+  border-radius: 40px;
+  padding: 90px;
+  background-color: #44CFCB;
+}
+
+.wp-block-image {
+  border: 10px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  background-color: white;
+}
+
+.wp-block-image .nouvelle-image {
+  width: 70%;
+  margin: auto;
+}
+
+.wp-block-image .nouvelle-link {
+  margin-top: 10%;
+  padding: 5%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);

@@ -13,12 +13,12 @@
 <div class="wp-block-column">
 	<figure class="wp-block-image">
 	 
-	<a href="<?php the_permalink(); ?>">
+	<a href="<?php the_permalink(); ?>" class="nouvelle-images">
 	<?php 
 //	the_post_thumbnail(''); 
 
 	$image = get_field('mon_image');
-	$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+	$size = 'large'; // (thumbnail, medium, large, full or custom size)
 	if( $image ) {
 		echo wp_get_attachment_image( $image, $size );
 	}
@@ -27,7 +27,6 @@
 	
 	?>
 	</a>
-		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-	</figcaption>
+		<a href="<?php the_permalink(); ?>" class="nouvelle-link"><?php the_title(); ?></a>
 	</figure>
 </div>

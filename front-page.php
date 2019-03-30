@@ -11,9 +11,8 @@
 
 get_header();
 ?>
-//////////////////  front-page.php //////////////
 <section id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="main" class="site-main site-main-accueil">
 
 	<?php
 		/* Start the Loop  La première boucle */
@@ -43,6 +42,7 @@ get_header();
 
 <article  class="page type-page status-publish has-post-thumbnail hentry entry">
 	<div class="entry-content">
+	<div class="nouvelle-title"> <strong> Nouvelles </strong></div>
 		<div class="wp-block-columns has-4-columns">
 		<?php while ( $query->have_posts()) {
 				$query->the_post();

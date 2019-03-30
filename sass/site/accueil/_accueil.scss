@@ -1,3 +1,40 @@
 .entry .entry-content .has-large-font-size {
     font-size: 1em; 
 }
+
+.nouvelle-title {
+    font-size: 3em;
+    border-bottom: 5px solid black;
+}
+
+.has-4-columns {
+    min-width: 72vw;
+    border-radius: 40px;
+    padding : 90px;
+    background-color: #44CFCB;
+}
+
+.wp-block-image {
+    border: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    background-color: white;
+    
+
+    .nouvelle-image {
+        width: 70%;
+        margin: auto;
+    }
+
+    .nouvelle-link {
+        margin-top: 10%;
+        padding: 5%;
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+    
+}
+
