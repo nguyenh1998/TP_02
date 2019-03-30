@@ -10,7 +10,6 @@
  */
 
 ?>
-//////////////////  accueil-page.php //////////////
 
 <div class="menu">
     <div data-active-trigger="menu" class="menu-opener">
@@ -18,10 +17,9 @@
             <span></span>
         </div>
         <ul data-active-group="menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contacts</li>
-            <li>Blog</li>
+            <li>Accueil</li>
+            <li>Grille de cours</li>
+            <li>Nouvelles</li>
         </ul>
     </div>
 </div>

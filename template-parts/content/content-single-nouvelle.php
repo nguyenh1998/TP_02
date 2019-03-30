@@ -13,7 +13,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
-	<header class="entry-header">
+	<header class="entry-header title-stuff">
 		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 	</header>
 	<?php endif; ?>
@@ -23,13 +23,13 @@
 			<figure class="wp-block-media-text__media">
 			<?php
 				$image = get_field('mon_image');
-				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+				$size = 'large'; // (thumbnail, medium, large, full or custom size)
 				if( $image ) {
 					echo wp_get_attachment_image( $image, $size );
 				}
 			?>
 			</figure>
-			<div class="wp-block-media-text__content">
+			<div class="wp-block-media-text__content text-content">
 				<?php
 					the_content();
 				?>

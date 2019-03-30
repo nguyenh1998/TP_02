@@ -909,6 +909,10 @@ body {
   font-size: .4em;
 }
 
+.entry-content {
+  opacity: 0;
+}
+
 .entry .entry-content .has-large-font-size {
   font-size: 1em;
 }
@@ -999,6 +1003,25 @@ body {
   margin-bottom: 10%;
   padding: 4%;
   border-radius: 20px;
+}
+
+.title-stuff {
+  border-bottom: 5px solid black;
+}
+
+.entry-content-nouvelle {
+  border: 10px solid #44CFCB;
+  border-radius: 50px;
+}
+
+.text-content {
+  font-size: 0.8em;
+}
+
+.entry-content-cours {
+  border: 10px solid #40798C;
+  border-radius: 50px;
+  font-size: 0.9em;
 }
 
 @-webkit-keyframes anim1 {
@@ -1139,6 +1162,24 @@ body {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .site-header.featured-image {
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -1160,5 +1201,10 @@ body {
           animation: anim3 1s forwards, anim2 1s 1s forwards;
   -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
           animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+}
+
+.anim4 {
+  -webkit-animation: fadeIn 3s forwards 2s;
+          animation: fadeIn 3s forwards 2s;
 }
 /*# sourceMappingURL=style.css.map */
