@@ -130,14 +130,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li {
-  color: white;
+  color: #44CFCB;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: white;
+  color: #44CFCB;
   margin-right: 0.5rem;
 }
 
@@ -596,103 +596,25 @@ body.page .main-navigation {
   }
 }
 
-body {
-  font-family: Avenir Next, sans-serif;
-}
-
-.burger {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  height: 50px;
-  width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.burger:hover {
-  cursor: pointer;
-}
-
-.burger > span {
-  content: '';
-  width: 50px;
-  height: 6px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.burger > span:before,
-.burger > span:after {
-  content: '';
-  width: 50px;
-  height: 6px;
-  top: -12px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-}
-
-.burger > span:after {
-  top: 12px;
-}
-
-.burger_opened > span:before,
-.burger_opened > span:after {
-  content: '';
-  width: 50px;
-  height: 6px;
-  top: 0px;
-  border-radius: 2px;
-  background: #44CFCB;
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.burger_opened > span {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-[data-active-group] {
-  position: fixed;
-  font-size: 20px;
-  left: -100%;
-  top: 0;
-  padding: 10px;
-  color: white;
-  background-color: black;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-[data-active-group] > li {
-  margin: 10px;
-}
-
-.active {
-  top: 0;
-  left: 0;
-}
-
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-  height: 90vh;
   background-image: url("img/header-image.png");
   background-size: cover;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .site-header {
+    height: 90vh;
+  }
 }
 
 .site-header.featured-image {
@@ -796,24 +718,57 @@ body {
   font-size: 10vw;
 }
 
+@media only screen and (min-width: 768px) {
+  .site-title {
+    font-size: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .site-title {
+    font-size: 10vw;
+  }
+}
+
 .site-description {
   min-width: 70%;
   font-size: 2.4vw;
   color: #FCFCFC;
   padding-left: 10%;
   padding-top: 1%;
+  font-weight: 1000;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-description {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .site-description {
+    font-size: 2.4vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #masthead {
+    padding-top: 30%;
+  }
 }
 
 @media only screen and (min-width: 1168px) {
   #masthead {
-    padding-top: 27%;
+    padding-top: 23%;
   }
-  #masthead a {
-    color: #FCFCFC;
-  }
-  #masthead a:hover {
-    color: #44CFCB;
-  }
+}
+
+#masthead a {
+  color: #FCFCFC;
+}
+
+#masthead a:hover {
+  color: #44CFCB;
 }
 
 /*--------------------------------------------------------------
@@ -928,8 +883,14 @@ body {
 .has-4-columns {
   min-width: 72vw;
   border-radius: 40px;
-  padding: 90px;
+  padding: 40px;
   background-color: #44CFCB;
+}
+
+@media only screen and (min-width: 1168px) {
+  .has-4-columns {
+    padding: 90px;
+  }
 }
 
 .wp-block-image {

@@ -1,6 +1,16 @@
 // Featured image styles
 .site-header {
-    height: 90vh;
+
+    @include media(tablet) 
+    {
+        height: 50vh;
+    }
+
+    @include media(desktop) 
+    {
+        height: 90vh;
+    }
+        
     background-image: url("img/header-image.png");
     background-size: cover;
     color: white;
@@ -98,6 +108,14 @@
 
 .site-title {
     font-size: 10vw;
+
+    @include media(tablet) {
+        font-size: 20vw;
+    }
+
+    @include media(desktop) {
+        font-size: 10vw;
+    }
 }
 
 .site-description {
@@ -106,20 +124,34 @@
     color : #FCFCFC;
     padding-left: 10%;
     padding-top: 1%;
+    font-weight: 1000;
+
+    @include media(tablet) {
+        font-size: 5vw;
+    }
+
+    @include media(desktop) {
+        font-size: 2.4vw;
+    }
 }
 
 
 
 #masthead {
-    @include media(desktop) {
-        padding-top: 27%;
-
-        a {
-            color: #FCFCFC;
-        }
-
-        a:hover {
-            color : #44CFCB;
-        }
+    @include media(tablet) {
+        padding-top: 30%;
     }
+
+    @include media(desktop) {
+        padding-top: 23%;
+    }
+
+    a {
+        color: #FCFCFC;
+    }
+
+    a:hover {
+        color : #44CFCB;
+    }
+
 }
